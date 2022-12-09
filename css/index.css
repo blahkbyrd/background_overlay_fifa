@@ -3,13 +3,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  width: 100vw;
 }
 
 .trophy {
   position: absolute;
   top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%) scale(2);
+  left: 12%;
+  transform: translate(-50%, -50%) scale(1.4);
 }
 
 ul {
@@ -38,6 +40,42 @@ ul li {
 
 .red {
   border-color: #ff3333;
+}
+
+.star {
+  width: 20%;
+  height: 20%;
+  position: relative;
+  z-index: 99;
+  opacity: 1;
+  bottom: -30%;
+  left: 35%;
+}
+.star p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  left: 50%;
+  bottom: -27%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.star._1 {
+  transform: translate(50%, 40%);
+}
+.star._2 {
+  transform: translate(100%, 0%);
+}
+.star._2 img {
+  opacity: 0.4;
+}
+.star._3 {
+  transform: translate(0%, -100%);
+}
+
+.star-img {
+  width: 100%;
+  height: auto;
 }
 
 ul li:nth-child(100n+0) {
